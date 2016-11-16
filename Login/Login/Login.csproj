@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CajaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CajaPrincipal.Designer.cs">
+      <DependentUpon>CajaPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conexion\ConexionLogin.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -55,6 +61,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CajaPrincipal.resx">
+      <DependentUpon>CajaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
